@@ -156,7 +156,7 @@ def trigger_replication():
         }
         headers = {"Content-Type": "application/json"}
         try:
-            r_post = requests.post(url='http://rtp-wapl-arti1.cisco.com:6090/artifactory/ui/admin/repositories/executeall?repreal_tesoKey={}'.format(repo),json=payload, auth=('admin', '*********************'), headers=headers)
+            r_post = requests.post(url='http://dummy-server.cisco.com:6090/artifactory/ui/admin/repositories/executeall?repreal_tesoKey={}'.format(repo),json=payload, auth=('admin', '*********************'), headers=headers)
         except requests.exceptions.RequestException as e:
             print('ERROR: The repo: ' + repo + ' Falied due to the following error =====>', e)
             sys.exit(1)
