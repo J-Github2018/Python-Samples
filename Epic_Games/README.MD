@@ -1,4 +1,4 @@
-Problem1
+Problem 1 (My Thought Process)
 
 Never had the chance to design a script like this, looking forward to the challege and learning as I go.
 
@@ -12,7 +12,7 @@ Needed to figure out the approach I was going to take to get the memory usage pe
 
 Decided to have my python script be feed a csv file and it will parse the file for the servenames
 
-I setup an AWS account and spun up 2 EC2 to simulated running a machine on 1 machine that will retrieve information from both itself and the other cluser member
+I setup an AWS account and spun up about 8-10 EC2's to simulated A bastion host that will SSH to other nodes to query and send the information to the Graphite server
 
 I setup ssh access on both machines so that both python can run commands remotely on the other machine via ssh
 
